@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Security Tech Club Interest Form</title>
+  <style>
+    #interest-form {
+      font-family: Arial, sans-serif;
+      margin: 0 auto;
+      width: 50%;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #interest-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #interest-form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    #interest-form input[type="text"],
+    #interest-form input[type="email"],
+    #interest-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    #interest-form input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    #interest-form ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #interest-form input[type="submit"] {
+      display: block;
+      margin: 0 auto;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #interest-form input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <form id="interest-form" action="https://formspree.io/f/xkgworrn" method="POST">
+    <h2>Audisankara College of Engineering and Technology - Cyber Security Tech Club Interest Form</h2>
+    <section>
+      <h3>Your Information</h3>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="major">Major/Field of Study:</label>
+      <input type="text" id="major" name="major" required><br><br>
+      <label for="year">Year of Study:</label>
+      <input type="text" id="year" name="year" required><br><br>
+      <label for="roll">Roll Number:</label>
+      <input type="text" id="roll" name="roll" required><br><br>
+    </section>
+
+    <section>
+      <h3>Why Cyber Security?</h3>
+      <label for="interest">What sparked your interest in cyber security?</label>
+      <ul>
+        <li><input type="checkbox" id="hacking" name="interest_hacking"> I'm interested in learning more about hacking and penetration testing</li>
+        <li><input type="checkbox" id="coding" name="interest_coding"> I want to improve my skills in coding and programming</li>
+        <li><input type="checkbox" id="safety" name="interest_safety"> I'm concerned about online safety and security</li>
+        <li><input type="checkbox" id="career" name="interest_career"> I'm looking for a career in cyber security</li>
+        <li><input type="checkbox" id="other" name="interest_other"> Other (please specify): <input type="text" id="other-interest" name="other_interest"></li>
+      </ul>
+
+      <label for="gain">What do you hope to gain from joining our cyber security tech club?</label>
+      <ul>
+        <li><input type="checkbox" id="experts" name="gain_experts"> Learn from industry experts</li>
+        <li><input type="checkbox" id="hands-on" name="gain_hands_on"> Gain hands-on experience with cyber security tools and technologies</li>
+        <li><input type="checkbox" id="network" name="gain_network"> Network with like-minded individuals</li>
+        <li><input type="checkbox" id="competitions" name="gain_competitions"> Participate in competitions and challenges</li>
+        <li><input type="checkbox" id="resume" name="gain_resume"> Enhance my resume and career prospects</li>
+        <li><input type="checkbox" id="other-gain" name="gain_other"> Other (please specify): <input type="text" id="other-gain-text" name="gain_other_text"></li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Skills and Experience</h3>
+      <label for="programming">Do you have any prior experience with programming languages?</label>
+      <ul>
+        <li><input type="checkbox" id="python" name="programming_python"> Python</li>
+        <li><input type="checkbox" id="java" name="programming_java"> Java</li>
+        <li><input type="checkbox" id="cpp" name="programming_cpp"> C++</li>
+        <li><input type="checkbox" id="javascript" name="programming_javascript"> JavaScript</li>
+        <li><input type="checkbox" id="other-programming" name="programming_other"> Other (please specify): <input type="text" id="other-programming-text" name="programming_other_text"></li>
+      </ul>
+
+      <label for="experience">Have you participated in any cyber security-related activities or competitions?</label>
+      <ul>
+        <li><input type="checkbox" id="ctf" name="experience_ctf"> Capture the Flag (CTF) challenges</li>
+        <li><input type="checkbox" id="hackathons" name="experience_hackathons"> Hackathons</li>
+        <li><input type="checkbox" id="workshops" name="experience_workshops"> Cyber security workshops or training sessions</li>
+        <li><input type="checkbox" id="other-experience" name="experience_other"> Other (please specify): <input type="text" id="other-experience-text" name="experience_other_text"></li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>How Did You Hear About Us?</h3>
+      <label for="hear-about">How did you hear about our cyber security tech club?</label>
+      <ul>
+        <li><input type="checkbox" id="social" name="hear_about_social"> Social media</li>
+        <li><input type="checkbox" id="friend" name="hear_about_friend"> Friend or classmate</li>
+        <li><input type="checkbox" id="professor" name="hear_about_professor"> Professor or instructor</li>
+        <li><input type="checkbox" id="search" name="hear_about_search"> Online search</li>
+        <li><input type="checkbox" id="other-hear-about" name="hear_about_other"> Other (please specify): <input type="text" id="other-hear-about-text" name="hear_about_other_text"></li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Additional Comments</h3>
+      <label for="comments">Is there anything else you'd like to share about your interest in cyber security or our club?</label><br>
+      <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+    </section>
+
+    <input type="submit" value="Submit Interest">
+  </form>
+</body>
+</html>
